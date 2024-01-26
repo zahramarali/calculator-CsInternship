@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/199e009485.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>calculator</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="topHeader">
+        <p class="calcText">Calculator</p>
+        <div class="icons">
+          <i class="fa-solid fa-minus hoverI"></i>
+          <i class="fa-solid fa-window-restore hoverI"></i>
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+      </div>
+      <div class="bottomHeader">
+        <div class="leftSide">
+          <i class="fa-solid fa-bars"></i>
+          <p class="leftSide--text">Standard</p>
+          <i class="fa-solid fa-up-right-from-square"></i>
+        </div>
+        <div class="rigthSide">
+          <i class="fa-solid fa-clock-rotate-left"></i>
+        </div>
+      </div>
+      <div class="input">
+        <input type="number" name="calc" id="calculator" value="0" />
+      </div>
+      <div class="Mpart">
+        <button disabled class="btn">MC</button>
+        <button disabled class="btn">MR</button>
+        <button class="btn btn1">M+</button>
+        <button class="btn btn1">M-</button>
+        <button class="btn btn1">MS</button>
+        <button disabled class="btn">
+          <span>M</span>
+          <sup> <i class="fa-solid fa-chevron-down"></i> </sup>
+        </button>
+      </div>
+      <div class="Buttons">
+        <div class="firstRow Row">
+          <button class="button Btn1">&#37;</button>
+          <button class="button Btn1">&radic;</button>
+          <button class="button Btn1">
+            <span>
+              <sub>x</sub>
+            </span>
+            <span>
+              <sup class="sup">2</sup>
+            </span>
+          </button>
+          <button class="button Btn1">
+            <span>
+              <sup>1</sup>
+            </span>
+            <span>&frasl;</span>
+            <span class="x-sign">
+              <sub><em>x</em></sub>
+            </span>
+          </button>
+        </div>
+        <div class="SecRow Row">
+          <button class="button Btn1">CE</button>
+          <button class="button Btn1">C</button>
+          <button class="button Btn1">
+            <i class="fa-solid fa-delete-left"></i>
+          </button>
+          <button class="button Btn1">&#247;</button>
+        </div>
+        <div class="ThiRow Row">
+          <button class="button">7</button>
+          <button class="button">8</button>
+          <button class="button">9</button>
+          <button class="button Btn1">&#215;</button>
+        </div>
+        <div class="FouRow Row">
+          <button class="button">4</button>
+          <button class="button">5</button>
+          <button class="button">6</button>
+          <button class="button Btn1">&#8722;</button>
+        </div>
+        <div class="FivRow Row">
+          <button class="button">1</button>
+          <button class="button">2</button>
+          <button class="button">3</button>
+          <button class="button Btn1">&#43;</button>
+        </div>
+        <div class="SiRow Row">
+          <button class="button Btn1">
+            <span>
+              <sup>+</sup>
+            </span>
+            <span>&frasl;</span>
+            <span class="x-sign">
+              <sub><em>&#8722;</em></sub>
+            </span>
+          </button>
+          <button class="button">0</button>
+          <button class="button Btn1">&#8729;</button>
+          <button class="button Btn1">=</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

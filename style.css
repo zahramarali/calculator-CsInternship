@@ -1,0 +1,162 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container{
+  width: 460px;
+  /* height: 550px; */
+  background-color: #E6E6E6;
+  margin-top: 50px;
+}
+.topHeader{
+  display: flex;
+  justify-content: space-between;
+  /* padding:0 20px 0 20px; */
+}
+.calcText{
+  margin: 0;
+  font-size: 20px;
+  font-weight: lighter;
+  color: #3D3D3D;
+  padding: 10px 20px 10px 20px;
+
+}
+.icons{
+  display: flex;
+  /* gap: 45px; */
+  
+}
+.fa-xmark{
+  padding: 10px 20px 10px 20px;
+}
+.fa-xmark:hover{
+  background-color: red;
+}
+.hoverI{
+  padding: 10px 20px 10px 20px;
+
+}
+.hoverI:hover{
+  background-color: #CFCFCF;
+}
+.icons > i{
+  font-size: 20px;
+  color: #3D3D3D;
+}
+/* bottom header */
+.bottomHeader{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+ /* padding:0 10px 0 10px; */
+
+}
+.bottomHeader > div > i{
+  font-size: 20px;
+  /* width: 35px;
+  height: 35px; */
+}
+.leftSide{
+  display: flex;
+  align-items: center;
+  gap: 25px;
+   /* padding:0 10px 0 10px; */
+}
+
+.leftSide--text{
+  margin: 0;
+  font-size: 30px;
+  font-weight: lighter;
+} 
+.fa-bars{
+  padding: 30px;
+}
+.leftSide .fa-bars:hover{
+  background-color: #CFCFCF;
+}
+.rigthSide{
+  margin-right: 20px;
+}
+
+/* inputPart */
+.input{
+  margin-top: 10px;
+  margin: 10px;
+}
+.input #calculator{
+  width: 100%;
+  padding: 30px 10px 20px 10px;
+  background-color: #E6E6E6;
+  font-size: 45px;
+  border: none;
+  text-align: right;
+}
+.input #calculator:focus{
+  outline: none;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
+.Mpart{
+  display: flex;
+  justify-content: center;
+}
+.btn{
+  width: 15%;
+  border: none;
+  background-color: #E6E6E6;
+  font-weight: 600;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.fa-chevron-down{
+  font-size: 7px;
+}
+
+.Buttons{
+  margin: 3px;
+}
+.Row{
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin-bottom: 5px;
+}
+.firstRow{
+  margin-top: 10px;
+}
+.button{
+  width: 24%;
+  height: 65px;
+  border: none;
+  background-color: #FAFAFA;
+  font-size: 20px;
+  text-align: center;
+}
+.button:hover{
+  background-color: #E6E6E6;
+}
+.Btn1{
+  background-color: #F0F0F0;
+
+}
+.sup{
+font-size: 12px;
+}
+.fa-bars{
+  padding: 10px;
+}
