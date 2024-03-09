@@ -1,0 +1,186 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.grid-container{
+  display: grid;
+  width: 100%;
+  height: 100vh;
+  grid-template-rows: 7% 34% 59%;
+  grid-template-columns: 77% 23%;
+  grid-template-areas: "topBar topBar"
+  "res sideBar"
+  "btns sideBar";
+  background-color: #E6E6E6;
+
+  
+}
+/*******************top Bar*********************/
+.topBar{
+  grid-area: topBar;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
+  justify-content: space-between;
+  align-content: center;
+  padding: 0 0 15px 0px;
+  background-color: #E6E6E6;
+  color: #3D3D3D;
+  & .fa-xmark{
+    padding: 15px 15px 10px 20px;
+  }
+  & .calcText{
+    padding: 15px 15px 0px 20px;
+  }
+  & .hoverI{
+    padding: 15px 20px 10px 20px;
+  
+  }
+  & .icons > i{
+    font-size: 16px;
+    color: #3D3D3D;
+  }
+}
+.fa-xmark:hover{
+  background-color: red;
+  padding: 15px 15px 10px 20px;
+}
+
+.hoverI:hover{
+  background-color: #CFCFCF;
+}
+
+
+/*********************result part************************/
+.res{
+  background-color: #E6E6E6;
+  grid-area: res;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 20% 70% 10% ;
+
+}
+.leftSide{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  & .leftSide--text{
+    padding: 15px 15px 15px 0px;
+    font-size: 20px;
+    font-weight: lighter;
+  } 
+  & .fa-bars{
+    padding: 15px 15px 15px 15px;
+  }
+}
+
+.leftSide .fa-bars:hover{
+  background-color: #CFCFCF;
+}
+/**********************result: input part ******************/
+.input{
+  margin-top: 10px;
+  margin: 10px;
+}
+.input #calculator{
+  width: 100%;
+  padding: 30px 10px 20px 10px;
+  background-color: #E6E6E6;
+  font-size: 45px;
+  border: none;
+  text-align: right;
+}
+.input #calculator:focus{
+  outline: none;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
+/* ****************************result: M part */
+.Mpart{
+  display: flex;
+  justify-content: left;
+}
+.btn{
+  width:50px;
+  border: none;
+  background-color: #E6E6E6;
+  font-weight: 400;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  padding: 0 30px 20px 50px;
+   
+}
+.btn:first-child{
+  padding-left: 30px ;
+}
+/*******************Buttons*****************/
+.btns{
+  background-color: rgb(139, 222, 135);
+  grid-area: btns;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  grid-template-rows:  auto auto auto auto auto ;
+}
+.button{
+  font-size: 20px;
+  text-align: center;
+  border: 1px solid #E6E6E6;
+}
+.IconsBtn{
+  background-color: #F0F0F0;
+}
+.IconsBtn:hover{
+  background-color: #E6E6E6;
+}
+.num{
+  background-color: #FAFAFA;
+}
+.num:hover{
+  background-color: #E6E6E6;
+}
+
+/***********************sideBar******************/
+.sideBar{
+  background-color: #E6E6E6;
+  grid-area: sideBar;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 15% 85%  ;
+}
+
+.items{
+  display: flex;
+  & .item{
+    list-style: none;
+    padding-right: 25px;
+    font-weight: bold;
+    font-size: 20px;
+    position: relative;
+  }
+}
+.item1::after{
+  content: "";
+  position: absolute;
+  width: 69px;
+  height: 3px;
+  background-color: orange;
+  top: 30px;
+  right: 0;
+  left: 0;
+}
+
+.text-side{
+  font-size: 16px;
+  font-weight: bolder;
+
+}
